@@ -112,7 +112,6 @@ class AddressBook(UserDict):
 
 
 
-
 def input_error(func):
     def inner(*args, **kwargs):
         try:
@@ -144,7 +143,7 @@ def add_contact(args, book):
         record.add_phone(phone)
         return ('Phone added')
 
-@input_error
+
 @input_error
 def change_contact(args, book):
     name, old_phone, new_phone = args
