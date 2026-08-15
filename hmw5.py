@@ -158,7 +158,7 @@ def change_contact(args, book):
     return "Contact updated!"
     
 
-@input_error
+
 @input_error
 def show_phone(args, book):
     name = args[0]
